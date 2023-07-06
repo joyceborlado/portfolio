@@ -341,7 +341,9 @@ hr {
         display: block;
     }
 
-}
+    .profile {
+        max width: 80%;
+    }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
@@ -366,6 +368,6 @@ hr {
     }
 
     .contact-information {
-        width: 85%;
+        width: 90%;
     }
 }
