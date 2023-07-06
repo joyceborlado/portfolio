@@ -358,7 +358,7 @@ hr {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     #logo {
@@ -366,6 +366,6 @@ hr {
     }
 
     .contact-information {
-        width: 80%;
+        width: 85%;
     }
 }
