@@ -35,7 +35,7 @@ p {
 /* home */
 
 header {
-    padding: 10px;
+    padding: 0.6rem;
     background-color: #053c40;
 
 }
@@ -43,7 +43,7 @@ header {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 0.6rem;
     text-align: right;
 }
 
@@ -54,7 +54,7 @@ nav ul li {
 nav ul li a {
     color: #fffbf0;
     text-decoration: none;
-    padding: 30px;
+    padding: 1.8rem;
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -69,23 +69,22 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 120px auto;
+    margin: 10% auto;
     max-width: 60%;
-    
+
 }
 
 .profile-picture {
-    width: 300px;
-    height: 300px;
+    width: 18rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 
 .profile-name {
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.125rem;
 }
 
 hr {
@@ -99,33 +98,43 @@ hr {
 
 .profile-description {
     line-height: 1.5;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 /* Skills and services */
 #skills-and-services {
-    padding: 30px 20px;
+    padding: 1.75rem 1.25rem;
 }
 
 
-.image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px 20px;
+#skills-and-services ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
 }
 
-.image {
+.image-gallery li {
     text-align: center;
-    width: 300px;
 }
 
 .image img {
-    width: 300px;
-    height: 300px;
+    width: 18rem;
+    height: 18rem;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     margin-bottom: 0;
+}
+
+.image-gallery-content {
+    width: 18rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -135,28 +144,28 @@ hr {
     width: 85%;
     text-align: justify;
     margin: auto;
-    padding: 90px 0;
+    padding: 5.625rem 0;
 }
 
 #about-me p {
-    margin: 30px auto;
+    margin: 1.875rem auto;
 }
 
 
 /* Contact me */
 #contact-me {
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0.625rem 0;
     border-radius: 5px;
 }
 
 .contact-information {
     display: flex;
-    column-gap: 100px;
+    column-gap: 6.25rem;
     width: 50%;
     justify-content: center;
     margin: auto;
-    padding: 50px 0;
+    padding: 0.625rem 0;
 }
 
 .box {
@@ -174,3 +183,91 @@ hr {
     text-decoration: underline;
 }
 
+/* Media Query for Laptops and Desktops */
+@media (max-width: 1280px) {
+    #skills-and-services ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #skills-and-services ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profile {
+        display: block;
+    }
+
+    .profile-picture {
+        width: 15rem;
+    }
+}
+
+/* Media Query for Low Resolution Tablets and ipads max-width */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #skills-and-services ul {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-picture {
+        width: 10rem;
+    }
+}
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.0rem;
+        }
+
+        p {
+            font-size: 0.75rem;
+        }
+    }
