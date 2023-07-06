@@ -105,7 +105,7 @@ a {
 }
 
 
-#side-drawer header{
+#side-drawer header {
     padding: 0.6rem;
     background-color: #053c40;
     margin: 0;
@@ -126,10 +126,10 @@ a {
 
 #side-drawer li {
     margin: 0.5rem 0;
-    
+
 }
 
-#side-drawer a{
+#side-drawer a {
     color: #fffbf0;
     font-size: 1.5rem;
 }
@@ -144,7 +144,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 10% auto;
+    margin: 15% auto;
     max-width: 60%;
 
 }
@@ -219,7 +219,8 @@ hr {
     width: 85%;
     text-align: justify;
     margin: auto;
-    padding: 5.625rem 0;
+    padding: 3rem 0;
+    line-height: 1.5;
 }
 
 #about-me p {
@@ -237,7 +238,7 @@ hr {
 .contact-information {
     display: flex;
     column-gap: 6.25rem;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     margin: auto;
     padding: 0.625rem 0;
@@ -281,11 +282,11 @@ hr {
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     #skills-and-services ul {
@@ -304,19 +305,19 @@ hr {
 /* Media Query for Low Resolution Tablets and ipads max-width */
 @media (max-width: 767px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     #skills-and-services ul {
@@ -332,34 +333,39 @@ hr {
         display: none;
     }
 
-    .menu-btn  {
+    .menu-btn {
         display: flex;
     }
 
     #side-drawer:target {
         display: block;
     }
-    
+
 }
 
-    /* Media Query for Mobile Devices */
-    @media (max-width: 480px) {
-        h1 {
-            font-size: 2rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        h3 {
-            font-size: 1.0rem;
-        }
-
-        p {
-            font-size: 0.75rem;
-        }
-        #logo {
-            font-size: 2rem;
-        }
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.25rem;
     }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #logo {
+        font-size: 2rem;
+    }
+
+    .contact-information {
+        width: 80%;
+    }
+}
