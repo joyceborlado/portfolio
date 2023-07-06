@@ -9,16 +9,17 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 <body>
   <div id="home">
-    <header>
+    <header id="main-header">
+      <a href="index.html" id="logo">joyce borlado</a>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -27,7 +28,30 @@
           <li><a href="#contact-me">Contact</a></li>
         </ul>
       </nav>
+      <a href="#side-drawer" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </header>
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills-and-services">Services</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
+
+    </aside>
     <section class="white profile">
       <img class="profile-picture" src="images/Profilepic.png" alt="Profile Picture">
       <div class="profile-name-and-description">

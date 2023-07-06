@@ -32,26 +32,56 @@ p {
     color: white;
 }
 
-/* home */
-
-header {
-    padding: 0.6rem;
-    background-color: #053c40;
-
+a {
+    text-decoration: none;
 }
 
-nav ul {
-    list-style-type: none;
+/* home */
+
+#main-header {
+    padding: 0.6rem;
+    background-color: #053c40;
     margin: 0;
     padding: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.menu-btn {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+#main-header nav ul {
+    list-style-type: none;
     text-align: right;
 }
 
-nav ul li {
+#main-header nav ul li {
     display: inline;
 }
 
-nav ul li a {
+#main-header nav ul li a {
     color: #fffbf0;
     text-decoration: none;
     padding: 1.8rem;
@@ -59,7 +89,52 @@ nav ul li a {
     font-weight: 600;
 }
 
-nav ul li a:hover {
+#main-header nav ul li a:hover {
+    color: #62c9b4;
+    transition: 0.5s;
+}
+
+#side-drawer {
+    width: 100%;
+    height: 45%;
+    background-color: #496b64;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+#side-drawer header{
+    padding: 0.6rem;
+    background-color: #053c40;
+    margin: 0;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#side-drawer ul {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#side-drawer li {
+    margin: 0.5rem 0;
+    
+}
+
+#side-drawer a{
+    color: #fffbf0;
+    font-size: 1.5rem;
+}
+
+#side-header a:hover {
     color: #62c9b4;
     transition: 0.5s;
 }
@@ -251,6 +326,20 @@ hr {
     .profile-picture {
         width: 10rem;
     }
+
+
+    #main-header nav a {
+        display: none;
+    }
+
+    .menu-btn  {
+        display: flex;
+    }
+
+    #side-drawer:target {
+        display: block;
+    }
+    
 }
 
     /* Media Query for Mobile Devices */
@@ -269,5 +358,8 @@ hr {
 
         p {
             font-size: 0.75rem;
+        }
+        #logo {
+            font-size: 2rem;
         }
     }
