@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -184,16 +188,19 @@ hr {
 
 #skills-and-services ul {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    gap: 10px;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
     padding: 0;
-    justify-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 90%;
 }
 
 .image-gallery li {
     text-align: center;
+    width: 18rem;
+    margin: 0 auto;
 }
 
 .image img {
@@ -205,13 +212,11 @@ hr {
     margin-bottom: 0;
 }
 
-.image-gallery-content {
-    width: 18rem;
+.image-gallery p {
     justify-content: center;
     margin: 0;
     padding: 0;
 }
-
 
 /* About me */
 
@@ -259,11 +264,9 @@ hr {
     text-decoration: underline;
 }
 
+
 /* Media Query for Laptops and Desktops */
 @media (max-width: 1280px) {
-    #skills-and-services ul {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 
     h1 {
         font-size: 3rem;
@@ -287,10 +290,6 @@ hr {
 
     p {
         font-size: 1.25rem;
-    }
-
-    #skills-and-services ul {
-        grid-template-columns: 1fr 1fr;
     }
 
     .profile {
@@ -320,9 +319,6 @@ hr {
         font-size: 1.25rem;
     }
 
-    #skills-and-services ul {
-        grid-template-columns: 1fr;
-    }
 
     .profile-picture {
         width: 10rem;
@@ -345,13 +341,13 @@ hr {
         max width: 80%;
     }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 480px) {
-    #logo {
-        font-size: 2rem;
+    .contact-information {
+        width: 80%;
     }
 
-    .contact-information {
-        width: 90%;
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+        #logo {
+            font-size: 2rem;
+        }
     }
-}
